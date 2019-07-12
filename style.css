@@ -1,0 +1,139 @@
+/*
+Theme Name: lifeandshalom
+Theme URI: http://life-shalom.com
+Version: 1.0
+Author: zbass
+Author URI: https://www.instagram.com/zbass90/
+Theme URI: http://life-shalom.com
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: lifeandshalom
+Tags: one-column, two-columns, right-sidebar, custom-background, custom-menu, custom-colors, threaded-comments, featured-images, post-formats, translation-ready, full-width-template, sticky-post
+Description: life and shalom
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+header{
+    position:absolute;
+}
+#logo{
+    position:fixed;
+    width:127px;
+    height: 16.7px;
+    left: 5.73%;
+    top: 6.5%;
+}
+#nav{
+    position:fixed;
+    width:19.5px;
+    height: 16.6px;
+    right:5.73%;
+    top:6.5%;
+    cursor: pointer;
+}
+.mainImg{
+    max-width: 100%;
+    width:1920px;
+    height: auto;
+}
+@keyframes slidein{
+    from{
+        margin-left: 100%;
+    }
+    to{
+        margin-left: 69.35%;
+    }
+}
+@keyframes slideout{
+    from{
+        margin-left: 69.35%;
+    }
+    to{
+        margin-left: 100%;
+    }
+}
+#modal_div{
+    position: fixed;
+    width: 588px;
+    max-width: 100%;
+    height: 1080px;
+    background-color: #fff;
+    animation-name: slideout;
+    animation-duration: 0.4s;
+    animation-fill-mode: both;
+}
+#modal_div.modalAction{
+    animation-name: slidein;
+    animation-duration: 0.4s;
+    animation-fill-mode: both;
+
+}
+#closeImg{
+    position: relative;
+    cursor: pointer;
+    width: 13px;
+    height: 13px;
+    left: 11.5%;
+    top: 7%;
+}
+#sbImg{
+    position: relative;
+    width: 84px;
+    height: 15px;
+    top:7%;
+    left: 68%;
+    
+}
+.navList{
+    position: absolute;
+    border: solid 2px black;
+    width:70px;
+    height: 653.1px;
+    top:32%;
+    left:11.5%;
+}
+#home{
+    width: 48px;
+    height: 21px;
+    margin-bottom: 22px;
+}
+#about{
+    width: 48px;
+    height: 21px;
+    margin-bottom: 23px;
+}
+#project{
+    width: 57px;
+    height: 21px;
+    margin-bottom: 22px;
+}
+#inspire{
+    width: 54px;
+    height: 21px;
+    margin-bottom: 23px;
+}
+#contact{
+    width: 63px;
+    height: 21px;
+    margin-bottom: 276px;
+}
+#togInfo{
+    width: 381px;
+    height: 105px;
+    margin-bottom: 50px;
+}
+#sns{
+    width:121.1px;
+    height: 22.1px;
+}
+@media screen and (min-width:1920px) and (max-width:2560px){
+    .mainImg{
+        width: 2560px;
+        height: auto;
+    }
+}
