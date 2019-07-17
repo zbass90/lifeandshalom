@@ -1,0 +1,162 @@
+header{
+    position:absolute;
+}
+#logo{
+    position:fixed;
+    width:127px;
+    height: 16.7px;
+    left: 5.73%;
+    top: 6.5%;
+}
+#nav{
+    position:fixed;
+    width:19.5px;
+    height: 16.6px;
+    right:5.73%;
+    top:6.5%;
+    cursor: pointer;
+}
+@keyframes slidein{
+    from{
+        margin-left: 100%;
+    }
+    to{
+        margin-left: 69.35%;
+    }
+}
+@keyframes slideout{
+    from{
+        margin-left: 69.35%;
+    }
+    to{
+        margin-left: 100%;
+    }
+}
+#modal_div{
+    position: fixed;
+    width: 588px;
+    max-width: 100%;
+    height: 100%;
+    background-color: #fff;
+    margin-left:100%;
+    z-index: 1;
+}
+#modal_div.modalActionSI{
+    animation-name: slidein;
+    animation-duration: 0.4s;
+    animation-fill-mode: both;
+}
+#modal_div.modalActionSO{
+    animation-name: slideout;
+    animation-duration: 0.4s;
+    animation-fill-mode: both;
+}
+#closeImg{
+    position: relative;
+    cursor: pointer;
+    width: 13px;
+    height: 13px;
+    left: 11.5%;
+    top: 7%;
+}
+#sbImg{
+    position: relative;
+    width: 84px;
+    height: 15px;
+    top:7%;
+    left: 68%;
+    
+}
+.navList{
+    position: absolute;
+    width:70px;
+    height: 653.1px;
+    top:32%;
+    left:11.5%;
+}
+#home{
+    width: 48px;
+    height: 21px;
+    margin-bottom: 22px;
+}
+#about{
+    width: 48px;
+    height: 21px;
+    margin-bottom: 23px;
+}
+#project{
+    width: 57px;
+    height: 21px;
+    margin-bottom: 22px;
+}
+#inspire{
+    width: 54px;
+    height: 21px;
+    margin-bottom: 23px;
+}
+#contact{
+    width: 63px;
+    height: 21px;
+    margin-bottom: 276px;
+}
+#togInfo{
+    width: 381px;
+    height: 105px;
+    margin-bottom: 50px;
+}
+#sns{
+    width:121.1px;
+    height: 22.1px;
+}
+.aboutImg{
+    max-width: 100%;
+    width:1920px;
+    height: auto;
+}
+#about_div1{
+    position: absolute;
+    width: 356px;
+    height: 124px;
+    margin-left:40.8%;
+    margin-top:24%;
+}
+#about_p1{
+    position: fixed;
+    width: 356px;
+    height: 124px;
+    object-fit: contain;
+    font-family: Asap;
+    font-size: 25px;
+    font-weight: 100;
+    line-height: 2;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: #f0f0ed;
+}
+
+#about_div2{
+    position: absolute;
+    width:798px;
+    height: 128px;
+    margin-left:29.3%;
+    margin-top:24%;
+}
+#about_p2{
+    position: relative;
+    width: 798px;
+    height: 128px;
+    object-fit: contain;
+    font-family: Asap;
+    font-size: 25px;
+    font-weight: 100;
+    line-height: 2;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: #212121;
+}
+@media screen and (min-width:1920px) and (max-width:2560px){
+    .aboutImg{
+        width: 2560px;
+        height: auto;
+    }
+}

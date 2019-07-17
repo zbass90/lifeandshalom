@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,39 +9,84 @@
   <link rel="stylesheet" href="index.css"/>
   <title>Life & Shalom</title>
 </head>
-<header>
-    <img src="img/logo.png" id="logo"/>
-    <img src="img/nav.png" id="nav"/>
-    <div id="modal_div">
-        <img src="img/close.png" id="closeImg"/>
-        <img src="img/spaceBrand.png" id="sbImg"/>
-        <div class="navList">
-            <img src="img/home.png" id="home"/>
-            <img src="img/about.png" id="about"/>
-            <img src="img/project.png" id="project"/>
-            <img src="img/inspire.png" id="inspire"/>
-            <img src="img/contact.png" id="contact"/>
-            <img src="img/togInfo.png" id="togInfo"/>
-            <img src="img/sns.png" id="sns"/>
-        </div>
-    </div>
-</header>
 <body>
-    <img src="img/main1.png" id="main1" class="mainImg"/>
-    <img src="img/main2.png" class="mainImg"/>
-    <img src="img/main3.png" class="mainImg"/>
-    <img src="img/main4.png" id="main4" class="mainImg"/>
-<h1>hahaha</h1>
+<header>
+  <img src="img/logo.png" id="logo"/>
+  <img src="img/nav.png" id="nav"/>
+  <div id="modal_div">
+      <img src="img/close.png" id="closeImg"/>
+      <img src="img/spaceBrand.png" id="sbImg"/>
+      <div class="navList">
+          <img src="img/home.png" id="home"/>
+          <a href="about.html"><img src="img/about.png" id="about"/></a>
+          <img src="img/project.png" id="project"/>
+          <img src="img/inspire.png" id="inspire"/>
+          <img src="img/contact.png" id="contact"/>
+          <img src="img/togInfo.png" id="togInfo"/>
+          <img src="img/sns.png" id="sns"/>
+      </div>
+  </div>
+</header>
+  <div id="ct_p1" class="ct_p1">
+    <p id="p1">
+        OUV coffee<br>
+        This area is the company to introduce<br>
+        a column Can easily change from admin.
+    </p>
+        <a href="#" id="rm1"><span>Read more</span></a>
+  </div>
+  <img src="img/main1.png" class="mainImg"/>
+  <div id="ct_p2" class="ct_p1">
+      <p id="p1">
+          OUV coffee<br>
+          This area is the company to introduce<br>
+          a column Can easily change from admin.
+      </p>
+          <a href="#" id="rm1"><span>Read more</span></a>
+    </div>
+  <img src="img/main2.png" class="mainImg"/>
+  <div id="ct_p3" class="ct_p1">
+      <p id="p2">
+          OUV coffee<br>
+          This area is the company to introduce<br>
+          a column Can easily change from admin.
+      </p>
+          <a href="#" id="rm1"><span>Read more</span></a>
+    </div>
+  <img src="img/main3.png" class="mainImg"/>
+  <img src="img/main4.png" id="main4" class="mainImg"/>
+<footer>
+  <div id="ft_left">
+    <img src="img/address.png" id="address"/>
+    <img src="img/copyright.png" id="copyright"/>
+  </div>
+  <div id="ft_center">
+    <img src="img/tel.png" id="tel"/>
+    
+    <img src="img/sns1.png" id="sns1">
+    <img src="img/sns2.png" id="sns2">
+    <img src="img/sns3.png" id="sns3">
+  </div>
+  <div id="ft_right">
+    <img src="img/spaceBrand_ft.png" id="spaceBrand_ft"/>
+  </div>
+</footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <script>
     $(document).ready(function(){
         $("#nav").click(function(){
-          $("#modal_div").toggleClass('modalAction');
+          $("#modal_div").toggleClass('modalActionSI');
+          if($("#modal_div").hasClass('modalActionSO')){
+          $("#modal_div").toggleClass('modalActionSO');
+          }
         });
         $("#closeImg").click(function(){
-          $("#modal_div").toggleClass('modalAction');
+          $("#modal_div").toggleClass('modalActionSO');
+          if($("#modal_div").hasClass('modalActionSI')){
+            $("#modal_div").toggleClass('modalActionSI');
+          }
         });
       });
 </script>
