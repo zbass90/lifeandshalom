@@ -1,0 +1,212 @@
+body{
+    max-width: 100%;
+    height: auto;
+    background-color: #07262b;
+}
+header{
+    position: relative;
+    max-width: 100%;
+    width: 1920px;
+    height: 219px;
+}
+#header_div{
+    position: fixed;
+    max-width: 100%;
+    width:1920px;
+    height: 219px;
+}
+.header_p{
+    font-family: Asap;
+    font-size: 14px;
+    line-height: 1.57;
+    color: #f0f0ed;
+    font-weight: 100;
+}
+#header_p1{
+    margin-top:-18px;
+    margin-left:300px;
+}
+#header_p2{
+    margin-left:300px;
+}
+#mapImg{
+    width: 28px;
+    height: 16px;
+    margin-left:150px;
+    margin-top:-60px;
+}
+#instaImg{
+    width: 63px;
+    height: 16px;
+}
+#logo{
+    width:127px;
+    height: 16.7px;
+    margin-top:82px;
+    margin-left:110px;
+}
+#detail_num{
+    width:35px;
+    height:19.7px;
+    margin-top:-122px;
+    margin-left:610px;
+}
+#nav{
+    width:19.5px;
+    height: 16.6px;
+    cursor: pointer;
+    margin-top:-390px;
+    margin-left:1802px;
+}
+#modal_div{
+    position: fixed;
+    width: 588px;
+    max-width: 100%;
+    height: 100%;
+    background-color: #fff;
+    margin-left:100%;
+    z-index: 1;
+}
+@keyframes slidein{
+    from{
+        margin-left: 100%;
+    }
+    to{
+        margin-left: 69.35%;
+    }
+}
+@keyframes slideout{
+    from{
+        margin-left: 69.35%;
+    }
+    to{
+        margin-left: 100%;
+    }
+}
+@keyframes fadein{
+    from {
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+html{
+    animation:fadein 1.3s;
+}
+#modal_div.modalActionSI{
+    animation-name: slidein;
+    animation-duration: 0.4s;
+    animation-fill-mode: both;
+}
+#modal_div.modalActionSO{
+    animation-name: slideout;
+    animation-duration: 0.4s;
+    animation-fill-mode: both;
+}
+#closeImg{
+    position: relative;
+    cursor: pointer;
+    width: 13px;
+    height: 13px;
+    left: 11.5%;
+    top: 7%;
+}
+#sbImg{
+    position: relative;
+    width: 84px;
+    height: 15px;
+    top:7%;
+    left: 68%;
+    
+}
+.navList{
+    position: absolute;
+    width:70px;
+    height: 653.1px;
+    top:32%;
+    left:11.5%;
+}
+#home{
+    width: 48px;
+    height: 21px;
+    margin-bottom: 22px;
+}
+#about{
+    width: 48px;
+    height: 21px;
+    margin-bottom: 23px;
+}
+#project{
+    width: 57px;
+    height: 21px;
+    margin-bottom: 22px;
+}
+#inspire{
+    width: 54px;
+    height: 21px;
+    margin-bottom: 23px;
+}
+#contact{
+    width: 63px;
+    height: 21px;
+    margin-bottom: 276px;
+}
+#togInfo{
+    width: 381px;
+    height: 105px;
+    margin-bottom: 50px;
+}
+#sns{
+    width:121.1px;
+    height: 22.1px;
+}
+#contents{
+    max-width: 100%;
+    width:1414px;
+    height: 7048px;
+    margin:0 253px 311px 253px;
+}
+.detailImg{
+    width:1414px;
+    max-width: 100%;
+    height: auto;
+}
+#detail_1{
+    margin-bottom: 20px;
+}
+#detail_2{
+    margin-bottom: 16px;
+}
+#detail_3{
+    margin-bottom: 16px;
+}
+#detail_4{
+    margin-bottom: 15px;
+}
+#detail_5{
+    margin-bottom: 16px;
+}
+#detail_6{
+    margin-bottom: 16px;
+}
+footer{
+    width:1720px;
+    margin:0 110px 80px 110px;
+    max-width: 100%;
+    height: auto;
+}
+#arrow{
+    width: 8.7px;
+    height: 43px;
+    margin-right:22.6px;
+    cursor: pointer;
+}
+#footer_txt{
+    font-size: 13px;
+    font-family: DINAlternate;
+    font-weight: bold;
+    line-height: 6;
+    text-align: left;
+    color: #f0f0ed;
+}

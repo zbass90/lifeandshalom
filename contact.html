@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+<link rel="stylesheet" href="contact.css">
+<title>Life & Shalom (Contact)</title>
+</head>
+<body>
+<header>
+    <div id="header_div">
+        <a href="index.html"><img src="img/logo.png" id="logo"/></a>
+        <img src="img/nav.png" id="nav"/>
+    </div>
+    <div id="modal_div">
+        <img src="img/close.png" id="closeImg"/>
+        <img src="img/spaceBrand.png" id="sbImg"/>
+        <div class="navList">
+            <a href="index.html"><img src="img/home.png" id="home"/></a>
+            <a href="about.html"><img src="img/about.png" id="about"/></a>
+            <a href="project.html"><img src="img/project.png" id="project"/></a>
+            <img src="img/inspire.png" id="inspire"/>
+            <a href="contact.html"><img src="img/contact.png" id="contact"/></a>
+            <img src="img/togInfo.png" id="togInfo"/>
+            <img src="img/sns.png" id="sns"/>
+        </div>
+    </div>
+</header>
+<div class="contents">
+    <div id="cu_txt">
+        <p>
+                CONTACT US<br>
+                3f, 224, UN village-gil, Yongsan-gu, Seoul, Republic of Korea, 04420<br>
+                +82-10-9399-7471 / info@life&shalom.com
+        </p>
+        <img src="img/cu_sns.png" id="cu_sns"/>
+    </div>
+    <iframe id="gm" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d790.9463624239944!2d127.01237892506674!3d37.53655454438292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca3a4a212b983%3A0x7ca8011b892a1eb0!2z7ISc7Jq47Yq567OE7IucIOyaqeyCsOq1rCDtlZzrgqjrj5kg7Jyg7JeU67mM66as7KeA6ri4IDIyNA!5e0!3m2!1sko!2skr!4v1563831100147!5m2!1sko!2skr" width="100%" height="509px" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+<footer>
+    <div id="ft_left">
+        <img src="img/address.png" id="address"/>
+        <img src="img/copyright.png" id="copyright"/>
+    </div>
+    <div id="ft_center">
+        <img src="img/tel.png" id="tel"/>
+        
+        <img src="img/sns1.png" id="sns1">
+        <img src="img/sns2.png" id="sns2">
+        <img src="img/sns3.png" id="sns3">
+    </div>
+    <div id="ft_right">
+        <img src="img/spaceBrand_ft.png" id="spaceBrand_ft"/>
+    </div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#nav").click(function(){
+            $("#modal_div").toggleClass('modalActionSI');
+            if($("#modal_div").hasClass('modalActionSO')){
+            $("#modal_div").toggleClass('modalActionSO');
+            }
+        });
+        $("#closeImg").click(function(){
+            $("#modal_div").toggleClass('modalActionSO');
+            if($("#modal_div").hasClass('modalActionSI')){
+            $("#modal_div").toggleClass('modalActionSI');
+            }
+        });
+        setTimeout(() => {
+            $("footer").css('display','inline-flex');
+            $(".ct_p1").css('display','block');
+        }, 50);
+        });
+</script>
+</body>
+</html>

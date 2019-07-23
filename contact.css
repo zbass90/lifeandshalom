@@ -1,0 +1,202 @@
+body{
+    max-width: 100%;
+    height: auto;
+    background-color: #f0f0ed;
+    position: absolute;
+}
+#header_div{
+    position: absolute;
+}
+#logo{
+    width:127px;
+    height: 16.7px;
+    margin-top:82px;
+    margin-left:110px;
+}
+#nav{
+    width:19.5px;
+    height: 16.6px;
+    cursor: pointer;
+    margin-top:-45px;
+    margin-left:1790px;
+}
+#modal_div{
+    position: fixed;
+    width: 588px;
+    max-width: 100%;
+    height: 100%;
+    background-color: #fff;
+    margin-left:100%;
+    z-index: 1;
+}
+@keyframes slidein{
+    from{
+        margin-left: 100%;
+    }
+    to{
+        margin-left: 69.35%;
+    }
+}
+@keyframes slideout{
+    from{
+        margin-left: 69.35%;
+    }
+    to{
+        margin-left: 100%;
+    }
+}
+@keyframes fadein{
+    from {
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+html{
+    animation:fadein 1.3s;
+}
+#modal_div.modalActionSI{
+    animation-name: slidein;
+    animation-duration: 0.4s;
+    animation-fill-mode: both;
+}
+#modal_div.modalActionSO{
+    animation-name: slideout;
+    animation-duration: 0.4s;
+    animation-fill-mode: both;
+}
+#closeImg{
+    position: relative;
+    cursor: pointer;
+    width: 13px;
+    height: 13px;
+    left: 11.5%;
+    top: 7%;
+}
+#sbImg{
+    position: relative;
+    width: 84px;
+    height: 15px;
+    top:7%;
+    left: 68%;
+    
+}
+.navList{
+    position: absolute;
+    width:70px;
+    height: 653.1px;
+    top:32%;
+    left:11.5%;
+}
+#home{
+    width: 48px;
+    height: 21px;
+    margin-bottom: 22px;
+}
+#about{
+    width: 48px;
+    height: 21px;
+    margin-bottom: 23px;
+}
+#project{
+    width: 57px;
+    height: 21px;
+    margin-bottom: 22px;
+}
+#inspire{
+    width: 54px;
+    height: 21px;
+    margin-bottom: 23px;
+}
+#contact{
+    width: 63px;
+    height: 21px;
+    margin-bottom: 276px;
+}
+#togInfo{
+    width: 381px;
+    height: 105px;
+    margin-bottom: 50px;
+}
+#sns{
+    width:121.1px;
+    height: 22.1px;
+}
+
+.contents{  
+    margin-top:345.3px;
+}
+#cu_txt{
+    font-family: Asap;
+    font-size: 25px;
+    line-height: 2.4;
+    text-align: center;
+    color: #212121;
+    margin-bottom: 531.7px;
+}
+#cu_txt p{
+    margin-bottom: 159.7px;
+}
+#cu_sns{
+    width: 157.3px;
+    height: 28.7px;
+}
+#gm{
+
+}
+
+
+footer{
+    height: 341px;
+    width: 100%;
+    background-color:#f0f0ed;
+    display: none;
+}
+#ft_left{
+    width: 362px;
+    height: 148px;
+    margin: 103px 496px 90px 110px;
+}
+#address{
+    width: 362px;
+    height: 45px;
+    margin-bottom: 88px;
+}
+#copyright{
+    width: 325px;
+    height: 15px;
+}
+#ft_center{
+    width: 123px;
+    height: 150.9px;
+    margin: 103px 638px 86.9px 0;
+}
+#tel{
+    width: 123px;
+    height: 45px;
+    margin-bottom: 84px;
+}
+#sns1{
+    width:22.1px;
+    height: 22.1px;
+    margin-right: 28px;
+}
+#sns2{
+    width:22.1px;
+    height: 22.1px;
+    margin-right: 28px;
+}
+#sns3{
+    width:13.1px;
+    height: 21.9px;
+}
+#ft_right{
+    width: 81px;
+    height: 15px;
+    margin: 103px 110px 223px 0;
+}
+#spaceBrand_ft{
+    width: 81px;
+    height: 15px;
+}

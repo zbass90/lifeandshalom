@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+<link rel="stylesheet" href="detail.css">
+<title>Life & Shalom (Detail)</title>
+</head>
+<body>
+<header>
+    <div id="header_div">
+        <a href="index.html"><img src="img/logo_white.png" id="logo"/></a>
+        <p class="header_p" id="header_p1">
+            OUV COFFEE<br>
+            BRAND DESIGN
+        </p>
+        <img src="img/detail_num.png" id="detail_num"/>
+        <p class="header_p" id="header_p2">
+            His disappointment at the poor range of paperbacks led<br>
+            him to found Penguin Books. 
+        </p>
+        <img src="img/nav_white.png" id="nav"/>
+    </div></div>
+    <div id="header_right">
+        <p class="header_p" id="header_p3">
+            Client _ Ouv Coffee<br>
+            Directer_Jo Won Suk<br>
+            Designer_Park Sang Beom
+        <img src="img/map.png" id="mapImg"/>
+        <img src="img/instagram.png" id="instaImg"/>
+        </p>
+    <div id="modal_div">
+        <img src="img/close.png" id="closeImg"/>
+        <img src="img/spaceBrand.png" id="sbImg"/>
+        <div class="navList">
+            <a href="index.html"><img src="img/home.png" id="home"/></a>
+            <a href="about.html"><img src="img/about.png" id="about"/></a>
+            <a href="project.html"><img src="img/project.png" id="project"/></a>
+            <img src="img/inspire.png" id="inspire"/>
+            <a href="contact.html"><img src="img/contact.png" id="contact"/></a>
+            <img src="img/togInfo.png" id="togInfo"/>
+            <img src="img/sns.png" id="sns"/>
+        </div>
+    </div>
+</header>
+<div id="contents">
+    <img src="img/detail_1.png" class="detailImg" id="detail_1"/>
+    <img src="img/detail_2.png" class="detailImg" id="detail_2"/>
+    <img src="img/detail_3.png" class="detailImg" id="detail_3"/>
+    <img src="img/detail_4.png" class="detailImg" id="detail_4"/>
+    <img src="img/detail_5.png" class="detailImg" id="detail_5"/>
+    <img src="img/detail_6.png" class="detailImg" id="detail_6"/>
+    <img src="img/detail_7.png" class="detailImg" id="detail_7"/>
+</div>
+<footer>
+    <a id="arrow_a"><img src="img/arrow.png" id="arrow"/></a>
+    <span id="footer_txt">© 2019 Life & Shalom. ALL RIGHTS RESERVED.</span>
+</footer>
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script>
+        $(document).ready(function(){
+            $("#nav").click(function(){
+              $("#modal_div").toggleClass('modalActionSI');
+              if($("#modal_div").hasClass('modalActionSO')){
+              $("#modal_div").toggleClass('modalActionSO');
+              }
+            });
+            $("#closeImg").click(function(){
+              $("#modal_div").toggleClass('modalActionSO');
+              if($("#modal_div").hasClass('modalActionSI')){
+                $("#modal_div").toggleClass('modalActionSI');
+              }
+            });
+            setTimeout(() => {
+              $("footer").css('display','inline-flex');
+              $("#about_p2").css('display','block');
+              $(".aboutImg").css('display','block');
+        }, 50);
+            $("#arrow_a").click(function(){
+                $('html, body').animate({scrollTop:0},400);
+            });
+        });
+    </script>
+</body>
+</html>

@@ -11,17 +11,17 @@
 </head>
 <body>
 <header>
-  <img src="img/logo.png" id="logo"/>
+  <a href="index.html"><img src="img/logo.png" id="logo"/></a>
   <img src="img/nav.png" id="nav"/>
   <div id="modal_div">
       <img src="img/close.png" id="closeImg"/>
       <img src="img/spaceBrand.png" id="sbImg"/>
       <div class="navList">
-          <img src="img/home.png" id="home"/>
+          <a href="index.html"><img src="img/home.png" id="home"/></a>
           <a href="about.html"><img src="img/about.png" id="about"/></a>
-          <img src="img/project.png" id="project"/>
+          <a href="project.html"><img src="img/project.png" id="project"/></a>
           <img src="img/inspire.png" id="inspire"/>
-          <img src="img/contact.png" id="contact"/>
+          <a href="contact.html"><img src="img/contact.png" id="contact"/></a>
           <img src="img/togInfo.png" id="togInfo"/>
           <img src="img/sns.png" id="sns"/>
       </div>
@@ -33,7 +33,7 @@
         This area is the company to introduce<br>
         a column Can easily change from admin.
     </p>
-        <a href="#" id="rm1"><span>Read more</span></a>
+        <a href="detail.html" id="rm1"><span>Read more</span></a>
   </div>
   <img src="img/main1.png" class="mainImg"/>
   <div id="ct_p2" class="ct_p1">
@@ -88,6 +88,10 @@
             $("#modal_div").toggleClass('modalActionSI');
           }
         });
+        setTimeout(() => {
+          $("footer").css('display','inline-flex');
+          $(".ct_p1").css('display','block');
+        }, 10);
       });
 </script>
 </body>

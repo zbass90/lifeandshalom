@@ -1,20 +1,21 @@
 header{
-    position:absolute;
+    position: absolute;
+}
+#header_div{
+    position: absolute;
 }
 #logo{
-    position:fixed;
     width:127px;
     height: 16.7px;
-    left: 5.73%;
-    top: 6.5%;
+    margin-top:82px;
+    margin-left:110px;
 }
 #nav{
-    position:fixed;
     width:19.5px;
     height: 16.6px;
-    right:5.73%;
-    top:6.5%;
     cursor: pointer;
+    margin-top:-45px;
+    margin-left:1790px;
 }
 @keyframes slidein{
     from{
@@ -31,6 +32,17 @@ header{
     to{
         margin-left: 100%;
     }
+}
+@keyframes fadein{
+    from {
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+html{
+    animation:fadein 1.3s;
 }
 #modal_div{
     position: fixed;
@@ -108,10 +120,16 @@ header{
     width:121.1px;
     height: 22.1px;
 }
+.aboutImg_1{
+    max-width: 100%;
+    width:1920px;
+    height: auto;
+}
 .aboutImg{
     max-width: 100%;
     width:1920px;
     height: auto;
+    display: none;
 }
 #about_div1{
     position: absolute;
@@ -153,9 +171,67 @@ header{
     letter-spacing: 0.5px;
     text-align: center;
     color: #212121;
+    display: none;
+}
+footer{
+    height: 341px;
+    width: 100%;
+    background-color:#f0f0ed;
+    display: none;
+}
+#ft_left{
+    width: 362px;
+    height: 148px;
+    margin: 103px 496px 90px 110px;
+}
+#address{
+    width: 362px;
+    height: 45px;
+    margin-bottom: 88px;
+}
+#copyright{
+    width: 325px;
+    height: 15px;
+}
+#ft_center{
+    width: 123px;
+    height: 150.9px;
+    margin: 103px 638px 86.9px 0;
+}
+#tel{
+    width: 123px;
+    height: 45px;
+    margin-bottom: 84px;
+}
+#sns1{
+    width:22.1px;
+    height: 22.1px;
+    margin-right: 28px;
+}
+#sns2{
+    width:22.1px;
+    height: 22.1px;
+    margin-right: 28px;
+}
+#sns3{
+    width:13.1px;
+    height: 21.9px;
+}
+#ft_right{
+    width: 81px;
+    height: 15px;
+    margin: 103px 110px 223px 0;
+}
+#spaceBrand_ft{
+    width: 81px;
+    height: 15px;
 }
 @media screen and (min-width:1920px) and (max-width:2560px){
     .aboutImg{
+        width: 2560px;
+        height: auto;
+    }
+    .aboutImg_1{
         width: 2560px;
         height: auto;
     }
